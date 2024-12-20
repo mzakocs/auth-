@@ -1,0 +1,9 @@
+[Unit]
+Description=Auto-run AFLPlusPlus performance mode
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/afl-system-config
+
+[Install]
+WantedBy=multi-user.target
